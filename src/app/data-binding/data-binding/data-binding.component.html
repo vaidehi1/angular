@@ -1,0 +1,40 @@
+<div [ngClass]="{
+    'text-blue': textBlue,
+    'text-bold': textBold,
+    'text-italic': textItalic
+  }"> This is a sample text.</div>
+<button (click)="makeTextBlue()">Make text blue</button>
+<button (click)="makeTextBold()">Make text bold</button>
+<button (click)="makeTextItalic()">Make text italic</button>
+<br />
+<hr/>
+<br/>
+<form>
+    <div>
+        <label>First name</label>
+        <input type="text" name="firstName"  [(ngModel)]="data.firstName" />
+    </div>
+    <div>
+        <label>Last name</label>
+        <input type="text" name="lastName"  [(ngModel)]="data.lastName" />
+    </div>
+    <div>
+        <label>City</label>
+        <input type="text" name="city"  [(ngModel)]="data.city" />
+    </div>
+    <div>
+        <label>State</label>
+        <input type="text" name="state"  [(ngModel)]="data.state" />
+    </div>
+    <div>
+        <label>Country</label>
+        <input type="text" name="country"  [(ngModel)]="data.country" />
+    </div>
+</form>
+<br/>
+<h4>Form data</h4>
+<div><span class="text-bold">First name:</span>{{data.firstName}}</div>
+<div><span class="text-bold">Last name:</span>{{data.lastName}}</div>
+<div><span class="text-bold">City:</span>{{data.city}}</div>
+<div><span class="text-bold">State:</span>{{data.state}}</div>
+<div><span class="text-bold">Country:</span>{{data.country}}</div>
