@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding/data-binding.component';
 import { FormsModule} from '@angular/forms';
+import { AccordianComponent } from './accordian/accordian.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    AccordianComponent
   ],
   imports: [
     BrowserModule,

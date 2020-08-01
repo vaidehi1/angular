@@ -1,0 +1,9 @@
+<div *ngFor="let acc of accordianItems" (click)="showAccordian(acc)">
+    <div class="accordian" [ngClass]="{
+        'accordian-green': acc.isVisible}">
+       {{acc.title}}
+    </div>
+    <div class="accordian-item" *ngIf="acc.isVisible">
+        {{acc.content}}
+    </div>
+</div>
